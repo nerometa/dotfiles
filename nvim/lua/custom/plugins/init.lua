@@ -5,4 +5,5 @@
 return {
     require 'custom.plugins.filebrowser',
     require 'custom.plugins.theme',
+    require 'custom.plugins.noice',
 }
