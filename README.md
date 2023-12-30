@@ -11,4 +11,5 @@ My personal dotfiles to ✨spice ✨ my system up a bit. Not really fleshed out 
 
 - [ ] installation script
 - [ ] rice shell (zsh, fish, etc.)
+
 More to come
