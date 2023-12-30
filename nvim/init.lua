@@ -268,6 +268,9 @@ require('lazy').setup({
 -- Set rose-pine theme
 vim.cmd('colorscheme rose-pine')
 
+-- Set format option to prevent next line from being commented out
+vim.cmd([[autocmd FileType * set formatoptions-=cro]])
+
 -- Set highlight on search
 vim.o.hlsearch = false
 
