@@ -269,7 +269,17 @@ require('lazy').setup({
 vim.cmd('colorscheme rose-pine')
 
 -- Set format option to prevent next line from being commented out
-vim.cmd([[autocmd FileType * set formatoptions-=cro]])
+vim.cmd([[autocmd FileType * set formatoptions-=ro]])
+
+-- Auto-toggle neo-tree
+vim.api.nvim_create_autocmd("VimEnter", {
+  pattern = "*",
+  callback = function()
+    vim.cmd("Neotree filesystem reveal left")
+  end,
+  group = vim.api.nvim_create_augroup("auto_open_neotree", { clear = true }),
+  desc = "Auto open Neo-tree when entering buffer",
+})
 
 -- Set highlight on search
 vim.o.hlsearch = false

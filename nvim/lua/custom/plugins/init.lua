@@ -3,7 +3,7 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-    require 'custom.plugins.filebrowser',
+    require 'custom.plugins.neotree',
     require 'custom.plugins.theme',
     require 'custom.plugins.noice',
 }
