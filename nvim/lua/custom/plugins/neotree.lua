@@ -10,7 +10,7 @@ return {
 	},
 	keys = {
 		{
-			"<c-b>",
+			"<c-n>",
 			function()
 				require('neo-tree.command').execute({ source = 'filesystem', toggle = true })
 			end,
