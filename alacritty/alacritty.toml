@@ -2,6 +2,8 @@
 
 live_config_reload = true
 
+# On Windows/WSL, use $APPDATA/alacritty
+# Linux
 import = ['~/.config/alacritty/themes/rose-pine-moon.toml']
 
 [shell]
