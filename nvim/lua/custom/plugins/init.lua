@@ -6,5 +6,7 @@ return {
 	require 'custom.plugins.neotree',
 	require 'custom.plugins.theme',
 	require 'custom.plugins.noice',
-	require 'custom.plugins.autopairs'
+	require 'custom.plugins.autopairs',
+	require 'custom.plugins.nvim-ts-autopair',
+	require 'custom.plugins.tabby'
 }
