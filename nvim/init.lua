@@ -281,6 +281,33 @@ vim.api.nvim_create_autocmd("VimEnter", {
   desc = "Auto open Neo-tree when entering buffer",
 })
 
+-- Auto indent on empty line.
+vim.keymap.set('n', 'i',
+  function() return string.match(vim.api.nvim_get_current_line(), '%g') == nil and 'cc' or 'i' end,
+  { expr = true, noremap = true })
+
+-- Keep some context in view
+vim.opt.scrolloff = 8
+
+-- Use system clipboard / WSL fix
+if vim.fn.has('wsl') == 1 then
+  vim.g.clipboard = {
+    name = 'WslClipboard',
+    copy = {
+      ['+'] = 'clip.exe',
+      ['*'] = 'clip.exe',
+    },
+    paste = {
+      ['+'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+      ['*'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+    },
+    cache_enabled = 0,
+  }
+end
+
+-- Set text wrap
+vim.opt.wrap = true
+
 -- Set highlight on search
 vim.o.hlsearch = false
 
