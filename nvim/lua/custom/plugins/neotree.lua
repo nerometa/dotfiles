@@ -28,7 +28,4 @@ return {
 			end
 		end
 	end,
-	opts = {
-		close_if_last_window = true
-	}
 }
