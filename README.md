@@ -4,43 +4,49 @@ My personal dotfiles to ✨spice✨ my system up a bit. Not really fleshed out b
 
 ## 🗒️ Installation
 
-1. Clone this repo
+Clone this repo
 
-```bash
+```sh
 git clone https://github.com/nerometa/dotfiles.git
 cd dotfiles
 ```
 
-1. Install GNU Stow and tmux
+Install GNU Stow and tmux
 
-Ubuntu
+### Ubuntu
 
 ```bash
 sudo apt install stow tmux
 ```
 
-Arch Linux
+### Arch Linux
 
 ```bash
 sudo pacman -S stow tmux
 ```
 
-1. Install TPM (Tmux Plugin Manager)
+Install TPM (Tmux Plugin Manager)
 
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-1. Run `stow .` to symlink config (make sure you're in the `dotfiles` directory)
+Install Neovim from pre-built packages
+
+```bash
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux64.tar.gz
+```
+
+Run `stow .` to symlink config (make sure you're in the `dotfiles` directory)
 
 ```bash
 stow .
 ```
 
-## 🧱 Components
-
 - `wezterm` - Trusty terminal
-- `.config/nvim` - (Neovim) Text editor. Looking to transition from VSCode
+- `.config/nvim` - Text editor.
 - `.config/tmux` - Terminal multiplexer, one term for coding, one term for `npm run start`
 
 ## 🛣 Roadmap
