@@ -350,7 +350,14 @@ require('lazy').setup({
         --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
         --   },
         -- },
-        -- pickers = {}
+        pickers = {
+          find_files = {
+            hidden = true,
+          },
+        },
+        defaults = {
+          file_ignore_patterns = { 'node_modules', 'build', 'dist', 'yarn.lock', 'git', 'tpm' },
+        },
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
