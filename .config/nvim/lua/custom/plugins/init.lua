@@ -6,4 +6,5 @@ return {
   require 'custom.plugins.theme',
   require 'custom.plugins.noice',
   require 'custom.plugins.tmux',
+  require 'custom.plugins.tabout',
 }
