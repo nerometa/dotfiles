@@ -45,6 +45,8 @@ Run `stow .` to symlink config (make sure you're in the `dotfiles` directory)
 stow .
 ```
 
+## Structure
+
 - `wezterm` - Trusty terminal
 - `.config/nvim` - Text editor.
 - `.config/tmux` - Terminal multiplexer, one term for coding, one term for `npm run start`
@@ -54,4 +56,4 @@ stow .
 - [x] installation script (Kinda. Use [Stow](https://www.gnu.org/software/stow/) to manage the configs.)
 - [ ] rice shell (zsh, fish, etc.)
 
-More to come
+More to come...
