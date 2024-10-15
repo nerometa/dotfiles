@@ -7,4 +7,6 @@ return {
   require 'custom.plugins.noice',
   require 'custom.plugins.tmux',
   require 'custom.plugins.tabout',
+  require 'custom.plugins.supermaven',
+  require 'custom.plugins.fugitive',
 }
