@@ -10,5 +10,8 @@ local config = wezterm.config_builder()
 config.color_scheme = "rose-pine-moon"
 config.enable_tab_bar = false
 
+config.font = wezterm.font_with_fallback({ "JetBrains Mono", "Tlwg Typist" })
+
+-- ภาษาไทย
 -- and finally, return the configuration to wezterm
 return config
