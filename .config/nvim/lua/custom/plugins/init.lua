@@ -5,6 +5,5 @@
 return {
   require 'custom.plugins.theme',
   require 'custom.plugins.noice',
-  require 'custom.plugins.tabby',
   require 'custom.plugins.tmux',
 }
